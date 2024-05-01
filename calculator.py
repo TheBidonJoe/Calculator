@@ -1,4 +1,4 @@
-# Basic calculator made by BidonJoe / 01.05.2024 :)
+# Basic calculator made by TheBidonJoe 05/24 ^_^
 
 # This restarts/loops the program while True.
 while True:
