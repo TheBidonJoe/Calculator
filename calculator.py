@@ -4,7 +4,7 @@
 while True:
     A = input("Enter expression (e.g., 5 + 5): ")
 
-    # We split our components. For the variable, I used "A".
+    # We split our components. As the variable, I used "A".
     components = A.split()
     first_number, operator, second_number = components
 
