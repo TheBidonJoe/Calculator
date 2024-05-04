@@ -3,8 +3,7 @@
 # This restarts/loops the program while it is set to True.
 # Have to figure out a way to let the user choose which style he wants to use!
 while True:
-    print("Welcome to my very first calculator!")
-    print("Please use spaces, like this: 20 + 5")
+    print("Please use spaces, like so: 20 + 5")
     Calculation = input("Enter calculation: ")
 
     #Split the components, used "Calculation" as the variable.
@@ -14,16 +13,16 @@ while True:
     if len(components) != 3:
         print("Invalid len of components!")
         exit()
-#Checks if input is a negative number (-2).
+    #Checks if input is a negative number (e.g. -2).
     try:
         if first_number_str.startswith("(") and first_number_str.endswith(")"):
             first_number_str = first_number_str[1:-1]
-        first_number =  int(first_number_str)
+        first_number =  float(first_number_str)
         if second_number_str.startswith("(") and second_number_str.endswith(")"):
             second_number_str = second_number_str[1:-1]
-        second_number = int(second_number_str)
+        second_number = float(second_number_str)
     except ValueError:
-        print("Numbers are invalid!")
+        print("Invalid input!")
         continue
 
     #Checks inputted operator and prints the corresponding result.
@@ -38,7 +37,7 @@ while True:
         print("Result is: ", result)
     elif operator == "/":
         if second_number == 0:
-            print("Division by zero is not possible.")
+            print("Division by zero.")
             continue
         else:
             result = first_number / second_number
@@ -49,6 +48,6 @@ while True:
     #Lets the user restart or end the program.
     restart = input("Again? (y/n): ")
     if restart.lower() != "yes" and restart.lower() != "y":
-        print("Goodbye..")
+        print("Goodbye.")
         break
 
