@@ -27,21 +27,29 @@ while True:
 
     #Checks inputted operator and prints the corresponding result.
     if operator == "+":
-        result = first_number + second_number
-        print("Result is: ", result)
+        result1 = first_number + second_number
+        result2 = str(result1).replace(".", ",")
+        print("Result is: ", result2)
     elif operator == "-":
-        result = first_number - second_number
-        print("Result is: ", result)
+        result1 = first_number - second_number
+        result2 = str(result1).replace(".", ",")
+        print("Result is: ", result2)
     elif operator == "*":
-        result = first_number * second_number
-        print("Result is: ", result)
+        result1 = first_number * second_number
+        result2 = str(result1).replace(".", ",")
+        print("Result is: ", result2)
     elif operator == "/":
         if second_number == 0:
             print("Division by zero.")
             continue
         else:
-            result = first_number / second_number
-            print("Result is: ", result)
+            result1 = first_number / second_number
+            result2 = str(result1).replace(".", ",")
+            print("Result is: ", result2)
+    elif operator == "pow":
+        result1 = pow(first_number, second_number)
+        result2 = str(result1).replace(".", ",")
+        print("Result is: ", result2)
     else:
         print("Invalid operator!")
         continue
