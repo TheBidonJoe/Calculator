@@ -1,5 +1,3 @@
-# Basic calculator made by TheBidonJoe / 02.05.2024
-
 # This restarts/loops the program while it is set to True.
 # Have to figure out a way to let the user choose which style he wants to use!
 while True:
