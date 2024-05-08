@@ -1,3 +1,5 @@
+#Should add GUI very soon..
+
 # This restarts/loops the program while it is set to True.
 # Have to figure out a way to let the user choose which style he wants to use!
 while True:
@@ -12,6 +14,7 @@ while True:
         print("Invalid len of components!")
         exit()
     #Checks if input is a negative number (e.g. -2).
+    #Could delete this.. maybe?
     try:
         if first_number_str.startswith("(") and first_number_str.endswith(")"):
             first_number_str = first_number_str[1:-1]
@@ -23,6 +26,8 @@ while True:
         print("Invalid input!")
         continue
 
+    #Maybe ask if , or . ?
+    
     #Checks inputted operator and prints the corresponding result.
     if operator == "+":
         result1 = first_number + second_number
